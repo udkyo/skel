@@ -1,7 +1,7 @@
 # skel
 Skel is a quick and easy way to create a skeleton container directory with Dockerfile + entrypoint.sh 
 
-Map a directory on the host to /skel to populate it. The Dockerfile will ensure wget is present and create a dockerfile which downloads dumb-init in the entrypoint.
+Map a directory on the host to /skel to populate it. The Dockerfile will ensure wget is present and create a dockerfile which downloads dumb-init and calls it as the entrypoint.
 
 ## Usage:
 
