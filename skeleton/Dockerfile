@@ -1,6 +1,7 @@
 FROM __IMAGE__
 
-# Add more packages inside quotes - e.g. packages="wget git unzip"
+# Add packages you need to install inside the quotes 
+# - e.g. packages="wget git unzip"
 ENV PACKAGES="wget"
 
 RUN apk add --no-cache $PACKAGES 2>/dev/null || \
