@@ -1,5 +1,7 @@
 # skel
-Simple container for generating a Dockerfile + entrypoint script with dumb-init ready to go.
+Run skel to create a skeleton container directory and files. 
+
+Map a directory on the host to /skel to quickly populate it with a Dockerfile and entrypoint script. The Dockerfile will ensure wget is present, and download dumb-init.
 
 ## Usage:
 
@@ -7,7 +9,7 @@ Create new files in ./myapp
 
 `docker run --rm -v $(pwd)/myapp:/skel udkyo/skel`
 
-Overwrite existing files 
+Or, overwrite existing files 
  
 `docker run --rm -v $(pwd)/myapp:/skel udkyo/skel -f`
 
