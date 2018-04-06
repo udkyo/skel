@@ -17,5 +17,5 @@ RUN wget -qO /usr/local/bin/dumb-init https://github.com/Yelp/dumb-init/releases
 COPY entrypoint.sh /
 RUN chmod +x /entrypoint.sh
 
-ENTRYPOINT ["dumb-init", "--"]
-CMD ["/entrypoint.sh"]
+ENTRYPOINT ["dumb-init", "--", "/entrypoint.sh"]
+CMD []
